@@ -55,7 +55,6 @@
 
   .main {
     max-width: 1400px;
-    height: auto;
     margin: 0 auto;
     background: rgba(#11253c, 0.4);
     backdrop-filter: blur(20px);
@@ -76,10 +75,38 @@
             border: 3px solid rgba(#fff, 0.6);
             border-radius: 30px;
             background: rgba(#11253c, 0.9);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            &-box {
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            &__inp {
+                width: 100%;
+                border-radius: 30px;
+                background: transparent;
+                padding: 0 30px;
+                color: #fff;
+                font-size: 20px;
+                &::placeholder {
+                    color: transparent;
+                }
+                &:focus {
+                    border: 3px solid $red;
+                }
+                &:focus::placeholder {
+                    color: #ccc;
+                }
+            }
 
         }
         &-item {
-            display: inline-block;
+            width: auto;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
             border: 3px solid rgba(#fff, 0.6);
             border-radius: 30px;
             background: rgba(#11253c, 0.9);
@@ -89,7 +116,8 @@
             cursor: pointer;
             transition: .3s all;
             position: relative;
-            margin-right: 5px;
+            flex-wrap: nowrap;
+            margin-right: 8px;
             &:last-child {
                 margin-right: 0;
             }
@@ -136,6 +164,9 @@
         }
         &-trailer {
             margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             &-item {
                 font-size: 20px;
                 font-weight: 400;
@@ -162,14 +193,61 @@
                 border-top: .5px solid rgba(#fff, 0.6);
                 border-bottom: .5px solid rgba(#fff, 0.6);
               }
+              .tg_bot {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                transition: .3s all;
+                svg {
+                    fill: #fff;
+                    margin-right: 10px;
+                    transition: .3s all;
+                }
+                &:hover svg {
+                   fill: $red;
+                }
+              }
         }
     }
     // End header
 
     .wrapper {
         width: 100%;
+        .my-video {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            display: none;
+
+            #wrapper-video {
+                width: 100%;
+                height: 650px;
+            }
+            &__close {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                z-index: 9999;
+                fill: #fff;
+                cursor: pointer;
+            }
+        }
+
         .trailer {
             position: relative;
+            width: 100%;
+            height: 650px;
+            
+            &__img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
             &__close {
                 position: absolute;
                 top: 25px;
@@ -183,6 +261,7 @@
                 }
             }
             &-item {
+                margin-top: 30px;
                 &__name {
                     font-size: 79px;
                     font-weight: 700;
@@ -223,42 +302,51 @@
                 &:hover {
                     background: $red;
                 }
-            }
-        }
-        .video-js {
-            width: 100%;
-            height: 650px;
-                box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
-            .vjs-poster {
-                background-size: cover;
-            }
-            .vjs-play-progress,
-            .vjs-volume-level {
-                background-color: $red;
-            }
-        }
-        .showVideo {
-            .vjs-poster {
-                display: inline-block;
-            }
-        }
-        .video-js .vjs-big-play-button {
-            width: 95px;
-            height: 95px;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            border: 2px solid $red;
-            transition: .3s all;
-            .vjs-icon-placeholder {
-                font-size: 60px;
+            } 
+            .trailer-bg {
                 position: absolute;
-                top: 20px;
-                left: 15px;
-                color: $red;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .2s all;
+                overflow: hidden;
+                border-radius: 20px;
+                z-index: 10;
+                .play {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    border: 2px solid $red;
+                    background: #0009;
+                    align-items: center;
+                    justify-content: center;
+                    transition: .3s all;
+                    cursor: pointer;
+                    display: none;
+                    svg {
+                        fill: $red;
+                        width: 40px;
+                        path {
+                            stroke: $red;
+                        }
+                    }
+                    &:hover {
+                        transform: scale(1.2);
+                        background: #0004;
+                    }
+                }
+            }
+            &:hover .trailer-bg {
+                background: #0004;
+                .play {
+                    display: flex;
+                }
             }
         }
 
