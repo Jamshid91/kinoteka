@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница поиска</title>
+    <link rel="stylesheet"  href="../assets/style/plugin/vjs.css"/>
+    <link rel="stylesheet"  href="../assets/style/plugin/slick.css"/>
+    <link rel="stylesheet"  href="../assets/style/plugin/slick-theme.css"/>
+    <link rel="stylesheet" href="../assets/style/css/main.css">
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <div class="header-search">
+                <div class="header-item">
+                    <span class="header-item__title">Жанр</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="8" viewBox="0 0 13 8">
+                        <image id="ВНИЗ" width="13" height="8" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAApklEQVQYlYXOIU9CAQDE8QNmcLgxgomZTM5oNBL9AAQiX4FIsLlZNNpNJptRR6AyMxXYGAVmsP7cC2xvz7dx25W7+2/XwHuS5yTTHNckSbuZ5DTJS5KLI8ggyX2STdDDHF/oIjW+xR6PRXcYXGOFV7Qq0BWWeMNJGSrcxw8eStk5vjFD55BXrwzxixHO8IEFLsu7uv9jbPGJNW6qmzqo8BN2uPvXkT//OAPsAw6zQQAAAABJRU5ErkJggg=="/>
+                      </svg>
+                      <ul class="header-item-info">
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Боевики</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Комедии</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Детективы</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Документальные</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Драмы</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Семейные</a></li>
+                      </ul>
+                </div>
+                <div class="header-item">
+                    <span class="header-item__title">Сериал</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="8" viewBox="0 0 13 8">
+                        <image id="ВНИЗ" width="13" height="8" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAApklEQVQYlYXOIU9CAQDE8QNmcLgxgomZTM5oNBL9AAQiX4FIsLlZNNpNJptRR6AyMxXYGAVmsP7cC2xvz7dx25W7+2/XwHuS5yTTHNckSbuZ5DTJS5KLI8ggyX2STdDDHF/oIjW+xR6PRXcYXGOFV7Qq0BWWeMNJGSrcxw8eStk5vjFD55BXrwzxixHO8IEFLsu7uv9jbPGJNW6qmzqo8BN2uPvXkT//OAPsAw6zQQAAAABJRU5ErkJggg=="/>
+                      </svg>
+                      <ul class="header-item-info">
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Боевики</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Комедии</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Детективы</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Документальные</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Драмы</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Семейные</a></li>
+                      </ul>
+                </div>
+                <div class="header-item">
+                    <span class="header-item__title">Фильм</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="8" viewBox="0 0 13 8">
+                        <image id="ВНИЗ" width="13" height="8" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAApklEQVQYlYXOIU9CAQDE8QNmcLgxgomZTM5oNBL9AAQiX4FIsLlZNNpNJptRR6AyMxXYGAVmsP7cC2xvz7dx25W7+2/XwHuS5yTTHNckSbuZ5DTJS5KLI8ggyX2STdDDHF/oIjW+xR6PRXcYXGOFV7Qq0BWWeMNJGSrcxw8eStk5vjFD55BXrwzxixHO8IEFLsu7uv9jbPGJNW6qmzqo8BN2uPvXkT//OAPsAw6zQQAAAABJRU5ErkJggg=="/>
+                      </svg>
+                      <ul class="header-item-info">
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Боевики</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Комедии</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Детективы</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Документальные</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Драмы</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">Семейные</a></li>
+                      </ul>
+                </div>
+                <div class="header-item">
+                    <span class="header-item__title">год</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="8" viewBox="0 0 13 8">
+                        <image id="ВНИЗ" width="13" height="8" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAApklEQVQYlYXOIU9CAQDE8QNmcLgxgomZTM5oNBL9AAQiX4FIsLlZNNpNJptRR6AyMxXYGAVmsP7cC2xvz7dx25W7+2/XwHuS5yTTHNckSbuZ5DTJS5KLI8ggyX2STdDDHF/oIjW+xR6PRXcYXGOFV7Qq0BWWeMNJGSrcxw8eStk5vjFD55BXrwzxixHO8IEFLsu7uv9jbPGJNW6qmzqo8BN2uPvXkT//OAPsAw6zQQAAAABJRU5ErkJggg=="/>
+                      </svg>
+                      <ul class="header-item-info">
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">2019</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">2020</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">2021</a></li>
+                            <li class="header-item-info__list"><a href="#" class="header-item-info__link">2022</a></li>
+                      </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End header -->
+
+        <div class="main-search">
+            
+            <div class="baner-advertising">
+                <div class="baner-advertising-item"></div>
+            </div>
+            <!-- End baner-advertising -->
+
+            <div class="search">
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c0f21821da75403f89dd435f440beb86/vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c7b00a7647e842e5b342abfe30f312aa/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/d08c6d4676194f77bbd688dbfb69b261/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/1da953a8615840e3ac48eff1ae568fce/vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c7b00a7647e842e5b342abfe30f312aa/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/1da953a8615840e3ac48eff1ae568fce/vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c7b00a7647e842e5b342abfe30f312aa/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c0f21821da75403f89dd435f440beb86/vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c7b00a7647e842e5b342abfe30f312aa/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/d08c6d4676194f77bbd688dbfb69b261/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/1da953a8615840e3ac48eff1ae568fce/vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c7b00a7647e842e5b342abfe30f312aa/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/1da953a8615840e3ac48eff1ae568fce/vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c7b00a7647e842e5b342abfe30f312aa/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a> <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c0f21821da75403f89dd435f440beb86/vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/c7b00a7647e842e5b342abfe30f312aa/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/d08c6d4676194f77bbd688dbfb69b261/images-image_vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search-item">
+                    <img src="https://api.start.ru/images/unsafe/630x900/filters:format(webp):watermark(18.png,-5,5,0,15,15)/1da953a8615840e3ac48eff1ae568fce/vertical_15x?size=200x287" alt="" class="slider-item__img">
+                    <div class="search-bg">
+                        <div class="play">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17.804 17.804" style="enable-background:new 0 0 17.804 17.804;" xml:space="preserve">
+                           <path d="M2.067,0.043C2.21-0.028,2.372-0.008,2.493,0.085l13.312,8.503c0.094,0.078,0.154,0.191,0.154,0.313
+                                   c0,0.12-0.061,0.237-0.154,0.314L2.492,17.717c-0.07,0.057-0.162,0.087-0.25,0.087l-0.176-0.04
+                                   c-0.136-0.065-0.222-0.207-0.222-0.361V0.402C1.844,0.25,1.93,0.107,2.067,0.043z"/>
+                       </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="search-btn">
+                <button class="search__btn">Загрузить еще</button>
+            </div>
+            <div class="search-page">
+                <a href="#" class="search-page-num page_active">1</a>
+                <a href="#" class="search-page-num">2</a>
+                <a href="#" class="search-page-num">3</a>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer-item">
+               <div class="footer-item-box">
+                <ul>
+                    <p class="footer__title">Мы на форумах</p>
+                    <li class="footer-list"><a href="#" class="footer-list__link">RuTor</a></li>
+                    <li class="footer-list"><a href="#" class="footer-list__link">BigRC</a></li>
+                </ul>
+                <ul>
+                    <p class="footer__title">Хостинги</p>
+                    <li class="footer-list"><a href="#" class="footer-list__link">Видеохостинг 1</a></li>
+                    <li class="footer-list"><a href="#" class="footer-list__link">Видеохостинг 2</a></li>
+                    <li class="footer-list"><a href="#" class="footer-list__link">Фотохостинг</a></li>
+                </ul>
+                <ul>
+                    <p class="footer__title">Сервисы</p>
+                    <li class="footer-list"><a href="#" class="footer-list__link">Место свободно</a></li>
+                    <li class="footer-list"><a href="#" class="footer-list__link">Крипто записка</a></li>
+                    <li class="footer-list"><a href="#" class="footer-list__link">Коды от домофона</a></li>
+                </ul>
+               </div>
+                <div class="footer-icon">
+                    <a href="#" class="footer-icon__link">
+                        <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="48px" height="48px">    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg>
+                    </a>
+                    <a href="#" class="footer-icon__link">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path d="M45.763,35.202c-1.797-3.234-6.426-7.12-8.337-8.811c-0.523-0.463-0.579-1.264-0.103-1.776 c3.647-3.919,6.564-8.422,7.568-11.143C45.334,12.27,44.417,11,43.125,11l-3.753,0c-1.237,0-1.961,0.444-2.306,1.151 c-3.031,6.211-5.631,8.899-7.451,10.47c-1.019,0.88-2.608,0.151-2.608-1.188c0-2.58,0-5.915,0-8.28 c0-1.147-0.938-2.075-2.095-2.075L18.056,11c-0.863,0-1.356,0.977-0.838,1.662l1.132,1.625c0.426,0.563,0.656,1.248,0.656,1.951 L19,23.556c0,1.273-1.543,1.895-2.459,1.003c-3.099-3.018-5.788-9.181-6.756-12.128C9.505,11.578,8.706,11.002,7.8,11l-3.697-0.009 c-1.387,0-2.401,1.315-2.024,2.639c3.378,11.857,10.309,23.137,22.661,24.36c1.217,0.12,2.267-0.86,2.267-2.073l0-3.846 c0-1.103,0.865-2.051,1.977-2.079c0.039-0.001,0.078-0.001,0.117-0.001c3.267,0,6.926,4.755,8.206,6.979 c0.368,0.64,1.056,1.03,1.8,1.03l4.973,0C45.531,38,46.462,36.461,45.763,35.202z"/></svg>
+                    </a>
+                    <a href="#" class="footer-icon__link">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path d="M 24 2 C 17.925 2 13 6.925 13 13 C 13 19.075 17.925 24 24 24 C 30.075 24 35 19.075 35 13 C 35 6.925 30.075 2 24 2 z M 24 8.9472656 C 26.238 8.9472656 28.052734 10.761 28.052734 13 C 28.052734 15.238 26.238 17.052734 24 17.052734 C 21.762 17.052734 19.947266 15.239 19.947266 13 C 19.947266 10.762 21.761 8.9472656 24 8.9472656 z M 33.185547 24.046875 C 32.402922 24.009469 31.6245 24.203187 30.9375 24.617188 C 26.7875 27.116187 21.2115 27.116187 17.0625 24.617188 C 15.1725 23.478188 12.710266 24.090469 11.572266 25.980469 C 11.021266 26.896469 10.858234 27.970813 11.115234 29.007812 C 11.373234 30.044812 12.019547 30.920703 12.935547 31.470703 C 14.396547 32.350703 15.959516 33.049594 17.603516 33.558594 L 12.009766 39.339844 C 11.300766 40.138844 10.942859 41.165422 11.005859 42.232422 C 11.068859 43.299422 11.542797 44.276328 12.341797 44.986328 C 13.105797 45.665328 14.060812 45.998047 15.007812 45.998047 C 16.103813 45.998047 17.189938 45.552547 17.960938 44.685547 L 24 38.443359 L 30.013672 44.652344 C 30.771672 45.506344 31.861906 45.994141 33.003906 45.994141 C 33.982906 45.994141 34.926156 45.635375 35.660156 44.984375 C 37.308156 43.519375 37.458844 40.986641 35.964844 39.306641 L 30.396484 33.558594 C 32.040484 33.048594 33.605406 32.34875 35.066406 31.46875 C 35.981406 30.91775 36.627766 30.044813 36.884766 29.007812 C 37.141766 27.970813 36.978734 26.895469 36.427734 25.980469 C 35.876734 25.065469 35.003797 24.419109 33.966797 24.162109 C 33.707797 24.097609 33.446422 24.059344 33.185547 24.046875 z"/></svg>
+                    </a>
+                    <a href="#" class="footer-icon__link">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="48px" height="48px"><path d="M 24 4.300781 C 23.101563 4.699219 22.199219 5 21.199219 5.101563 C 22.199219 4.5 23 3.5 23.398438 2.398438 C 22.398438 3 21.398438 3.398438 20.300781 3.601563 C 19.300781 2.601563 18 2 16.601563 2 C 13.898438 2 11.699219 4.199219 11.699219 6.898438 C 11.699219 7.300781 11.699219 7.699219 11.800781 8 C 7.699219 7.800781 4.101563 5.898438 1.699219 2.898438 C 1.199219 3.601563 1 4.5 1 5.398438 C 1 7.101563 1.898438 8.601563 3.199219 9.5 C 2.398438 9.398438 1.601563 9.199219 1 8.898438 C 1 8.898438 1 8.898438 1 9 C 1 11.398438 2.699219 13.398438 4.898438 13.800781 C 4.5 13.898438 4.101563 14 3.601563 14 C 3.300781 14 3 14 2.699219 13.898438 C 3.300781 15.898438 5.101563 17.300781 7.300781 17.300781 C 5.601563 18.601563 3.5 19.398438 1.199219 19.398438 C 0.800781 19.398438 0.398438 19.398438 0 19.300781 C 2.199219 20.699219 4.800781 21.5 7.5 21.5 C 16.601563 21.5 21.5 14 21.5 7.5 C 21.5 7.300781 21.5 7.101563 21.5 6.898438 C 22.5 6.199219 23.300781 5.300781 24 4.300781"/></svg>
+                    </a>
+                    <a href="#" class="footer-icon__link">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="48px" height="48px"><path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="../assets/js/plugin/jquery.js"></script>
+    <script src="../assets/js/plugin/slick.min.js"></script>
+    <script src="../assets/js/plugin/vjs.js"></script>
+    <script src="../assets/js/index.js"></script>
+</body>
+</html>
