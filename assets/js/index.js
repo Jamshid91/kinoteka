@@ -1,8 +1,10 @@
-const modal = document.querySelector('.modal'),
+const modal = document.querySelector('.modal-donate'),
       donate = document.querySelectorAll('.donate .icon'),
       myVideo = document.querySelector('.my-video'),
       playBtns = document.querySelectorAll('.trailer-bg .play'),
       myVideoClose = document.querySelector('.my-video__close'),
+      modalDonateClose = document.querySelector('.modal-donate__close'),
+      wrapperItem = document.querySelector('.wrapper-item'),
       trailerName = document.querySelector('.trailer-item__name');
 
 
@@ -13,15 +15,21 @@ donate.forEach(btn => {
     })
 });
 
+modalDonateClose.addEventListener('click', () => {
+  modal.classList.remove('showModal');
+});
+
 playBtns.forEach(play => {
   play.addEventListener('click', () => {
     myVideo.style.display = 'block'
+    wrapperItem.style.marginTop = '0px'
   })
 });
 
 myVideoClose.addEventListener('click', () => {
   myVideo.style.display = 'none'
-})
+  wrapperItem.style.marginTop = '-150px'
+});
       
 
 
