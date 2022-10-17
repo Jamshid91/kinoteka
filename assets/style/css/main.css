@@ -38,7 +38,7 @@ body {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: top 0, left center;
+  background-position: center 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #040a15;
   color: #fff;
@@ -135,23 +135,26 @@ input {
   background: transparent;
   padding: 0 30px;
   color: #fff;
+  border: 3px solid #69828f;
+  border-top: none;
+  border-bottom: none;
   font-size: 20px;
 }
 
 .main .header-search__inp::-webkit-input-placeholder {
-  color: transparent;
+  color: #69828f;
 }
 
 .main .header-search__inp:-ms-input-placeholder {
-  color: transparent;
+  color: #69828f;
 }
 
 .main .header-search__inp::-ms-input-placeholder {
-  color: transparent;
+  color: #69828f;
 }
 
 .main .header-search__inp::placeholder {
-  color: transparent;
+  color: #69828f;
 }
 
 .main .header-search__inp:focus {
@@ -417,7 +420,7 @@ input {
   margin-top: 50px;
 }
 
-.main .wrapper .trailer__btn {
+.main .wrapper .trailer .youtube__link {
   width: 175px;
   height: 55px;
   border: 3px solid rgba(204, 204, 204, 0.7);
@@ -431,9 +434,21 @@ input {
   -webkit-transition: .3s all;
   -o-transition: .3s all;
   transition: .3s all;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.main .wrapper .trailer__btn:hover {
+.main .wrapper .trailer .youtube__link:hover {
   opacity: 0.8;
 }
 
@@ -532,10 +547,6 @@ input {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
-  background: #0004;
-}
-
-.main .wrapper .trailer:hover .trailer-bg {
   background: #0004;
 }
 
@@ -1149,6 +1160,116 @@ input {
   opacity: 1;
 }
 
+.sign-in {
+  width: 520px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  padding: 45px 15px 30px;
+  text-align: center;
+  margin: 0px auto;
+  position: relative;
+}
+
+.sign-in .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 58, 75, 0.5);
+  border: 3px solid rgba(204, 204, 204, 0.7);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.sign-in__title {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.sign-in-form {
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.sign-in-form__inp {
+  width: 100%;
+  border: 1px solid rgba(204, 204, 204, 0.7);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  height: 50px;
+  background: transparent;
+  padding: 0 180px 0 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.sign-in-form__inp::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.sign-in-form__inp:-ms-input-placeholder {
+  color: #fff;
+}
+
+.sign-in-form__inp::-ms-input-placeholder {
+  color: #fff;
+}
+
+.sign-in-form__inp::placeholder {
+  color: #fff;
+}
+
+.sign-in-form .code {
+  margin-top: 25px;
+  position: relative;
+}
+
+.sign-in-form .code__btn {
+  width: 165px;
+  height: 50px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid rgba(204, 204, 204, 0.7);
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.sign-in-form .code__btn:hover {
+  background: #061323;
+}
+
+.sign-in-form__btn {
+  width: 145px;
+  height: 50px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  color: #fff;
+  font-size: 20px;
+  background: #061323;
+  border: 1px solid rgba(204, 204, 204, 0.7);
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+  margin-top: 30px;
+}
+
+.sign-in-form__btn:hover {
+  background: #ec1717;
+}
+
 .modal-donate {
   position: fixed;
   width: 100%;
@@ -1418,5 +1539,35 @@ input {
   }
   .main .wrapper-item {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sign-in {
+    width: 100%;
+  }
+  .sign-in__title {
+    font-size: 18px;
+    padding: 0;
+  }
+  .sign-in-form {
+    margin-top: 40px;
+  }
+  .sign-in-form__inp {
+    font-size: 16px;
+    padding: 0 100px 0 10px;
+  }
+  .sign-in-form .code {
+    margin-top: 25px;
+    position: relative;
+  }
+  .sign-in-form .code__btn {
+    width: 100px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .sign-in-form__btn {
+    width: 100%;
+    font-size: 14px;
   }
 }
