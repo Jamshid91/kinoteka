@@ -30,8 +30,6 @@ myVideoClose.addEventListener('click', () => {
   myVideo.style.display = 'none'
   wrapperItem.style.marginTop = '-150px'
 });
-      
-
 
 
 $(document).ready(function() {
