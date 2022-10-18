@@ -30,18 +30,44 @@
     transform: translateX(-50%);
     font-size: 50px;
     font-weight: 700;
-    width: 100%;
     text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50px;
+        width: 50px;
+        height: 100%;
+        background-color: rgba(#f64e4e, 0.6);
+      }
+    &:hover::before {
+         animation: move-light 3s;
+    }
   }
   .baner-advertising-left,
   .baner-advertising-right
    {
     position: absolute;
     top: 50%;
-    width: 170px;
     font-size: 30px;
+    display: inline-block;
+    overflow: hidden;
     span {
         font-size: 50px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100px;
+        width: 50px;
+        height: 100%;
+        background-color: rgba(#f64e4e, 0.6);
+      }
+    &:hover::before {
+         animation: move-light2 .5s;
     }
   }
   .baner-advertising-left {
@@ -528,8 +554,6 @@
         }
         
         .trailer-item__name {
-            display: inline-block;
-            height: 100px !important;
             font-size: 79px;
             font-weight: 700;
             position: absolute !important;
@@ -540,6 +564,8 @@
         .trailerName {
             left: 30px;
             font-size: 50px;
+            margin-top: 30px !important;
+            margin-bottom: 0 !important;
         }
         &-item {
             margin-top: -150px;
@@ -1078,5 +1104,22 @@
         transform: translateY(0)
     }
 }
+
+@keyframes move-light {
+    from {
+              transform: translateX(-20px) skewX(-45deg);
+    }
+    to {
+              transform: translateX(2000px) skewX(-45deg);
+    }
+  }
+  @keyframes move-light2 {
+    from {
+              transform: translateX(-20px) skewX(-45deg);
+    }
+    to {
+              transform: translateX(400px) skewX(-45deg);
+    }
+  }
 
   @import './_media';

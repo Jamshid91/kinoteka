@@ -356,6 +356,7 @@
                     align-items: center;
                     justify-content: space-between;
                     margin-bottom: 50px;
+                    margin-top: 25px;
 
                     &__name {
                         font-size: 22px;
@@ -374,6 +375,10 @@
                     height: 40px;
                     font-size: 14px;
                 }
+            }
+            .trailer-item__name {
+                position: relative !important;
+                margin-bottom: 30px;
             }
     
             &-item {
