@@ -295,6 +295,7 @@ input {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: -5px;
 }
 
 .middle-ad .side-ad {
