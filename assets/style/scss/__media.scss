@@ -99,9 +99,6 @@
         
         .baner-advertising {
             padding: 0 20px;
-            &-item {
-                height: 150px;
-            }
         }
         .donate {
             padding: 0 20px;
@@ -394,7 +391,6 @@
         .baner-advertising {
             padding: 0 20px;
             &-item {
-                height: 100px;
                 border-radius: 10px;
                 border: 1px solid rgba(#fff, 0.6);
             }

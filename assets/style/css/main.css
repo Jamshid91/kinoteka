@@ -994,11 +994,19 @@ input {
 
 .main .baner-advertising-item {
   width: 100%;
-  height: 200px;
+  height: auto;
   border: 3px solid rgba(255, 255, 255, 0.6);
   background: rgba(17, 37, 60, 0.5);
   -webkit-border-radius: 30px;
           border-radius: 30px;
+  overflow: hidden;
+}
+
+.main .baner-advertising-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .main .donate {
@@ -1748,9 +1756,6 @@ input {
   .main .baner-advertising {
     padding: 0 20px;
   }
-  .main .baner-advertising-item {
-    height: 150px;
-  }
   .main .donate {
     padding: 0 20px;
     margin-bottom: 40px;
@@ -2044,7 +2049,6 @@ input {
     padding: 0 20px;
   }
   .main .baner-advertising-item {
-    height: 100px;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.6);
