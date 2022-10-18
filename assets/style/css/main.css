@@ -34,83 +34,8 @@ html {
 }
 
 body {
-  background-image: url(../../img/png/body.png);
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-position: center 0;
-  font-family: 'Montserrat', sans-serif;
   background-color: #040a15;
   color: #fff;
-  padding: 260px 20px 180px;
-}
-
-.baner-advertising-sup {
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  font-size: 50px;
-  font-weight: 700;
-  text-align: center;
-  display: inline-block;
-  overflow: hidden;
-}
-
-.baner-advertising-sup::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -50px;
-  width: 50px;
-  height: 100%;
-  background-color: rgba(246, 78, 78, 0.6);
-}
-
-.baner-advertising-sup:hover::before {
-  -webkit-animation: move-light 3s;
-          animation: move-light 3s;
-}
-
-.baner-advertising-left,
-.baner-advertising-right {
-  position: absolute;
-  top: 50%;
-  font-size: 30px;
-  display: inline-block;
-  overflow: hidden;
-}
-
-.baner-advertising-left span,
-.baner-advertising-right span {
-  font-size: 50px;
-}
-
-.baner-advertising-left::before,
-.baner-advertising-right::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100px;
-  width: 50px;
-  height: 100%;
-  background-color: rgba(246, 78, 78, 0.6);
-}
-
-.baner-advertising-left:hover::before,
-.baner-advertising-right:hover::before {
-  -webkit-animation: move-light2 .5s;
-          animation: move-light2 .5s;
-}
-
-.baner-advertising-left {
-  left: 20px;
-}
-
-.baner-advertising-right {
-  right: 70px;
 }
 
 .showScroll {
@@ -341,6 +266,51 @@ input {
 
 .showCloseBtn {
   right: 20px;
+}
+
+.body-main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.body-main .sub-ad {
+  width: 100%;
+  height: 260px;
+  position: relative;
+}
+
+.body-main .sub-ad img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.body-main .sub-ad:hover {
+  opacity: 0.5;
+}
+
+.middle-ad {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.middle-ad .side-ad {
+  width: 15%;
+  position: relative;
+}
+
+.middle-ad .side-ad img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.middle-ad .side-ad:hover {
+  opacity: 0.5;
 }
 
 .main {
@@ -1737,6 +1707,12 @@ input {
   }
 }
 
+@media (max-width: 1400px) {
+  .middle-ad .side-ad {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .main .header {
     padding: 0 20px;
@@ -2019,9 +1995,6 @@ input {
 }
 
 @media (max-width: 576px) {
-  body {
-    padding: 150px 0 80px;
-  }
   .baner-advertising-sup {
     font-size: 30px;
     top: 40px;

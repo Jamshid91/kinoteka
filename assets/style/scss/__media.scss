@@ -1,3 +1,11 @@
+@media (max-width: 1400px) {
+    .middle-ad {
+        .side-ad {
+            display: none;
+        }
+      }
+}
+
 @media (max-width: 1200px) {
     .main {
         .header {
@@ -293,9 +301,6 @@
 }
 
 @media (max-width: 576px) {
-    body {
-        padding: 150px 0 80px;
-    }
     .baner-advertising-sup {
         font-size: 30px;
         top: 40px;
