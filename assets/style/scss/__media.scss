@@ -35,23 +35,32 @@
         .wrapper {
             .my-video {
                 #wrapper-video {
-                    height: 550px;
+                    height: 500px;
                 }
             }
             &-item {
                 display: flex;
                 flex-direction: column;
+                margin-top: -50px;
+                &-slider {
+                    margin: 0 auto;
+                }
+                
             }
-    
+            .youtube__link {
+                width: 130px;
+                    height: 50px;
+                    font-size: 16px;
+            }
+            .trailer-item__name {
+                left: 20px;
+            }
             .trailer {
                 position: relative;
                 width: 100%;
-                height: 550px;
+                height: 500px;
                 &-item {
                     height: auto;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
                     margin-bottom: 50px;
 
                     &__name {
@@ -59,17 +68,27 @@
                     }
                 }
                 &-item-btns {
+                   text-align: left;
                     margin-top: 0;
                 }
-                &__btn {
-                    width: 150px;
+                &__download,
+                &__favorites {
+                    width: 130px;
                     height: 50px;
                     font-size: 16px;
                 }
-                &__download {
-                    width: 150px;
-                    height: 50px;
-                    font-size: 16px;
+                .trailer-bg {
+                    .play {
+                        width: 60px;
+                        height: 60px;
+                        svg {
+                           width: 20px;
+                        }
+                        &:hover {
+                            transform: scale(1.2);
+                            background: #0004;
+                        }
+                    }
                 }
             }
     
@@ -77,11 +96,95 @@
                padding: 0 20px;
             }
         }
+        
+        .baner-advertising {
+            padding: 0 20px;
+            &-item {
+                height: 150px;
+            }
+        }
+        .donate {
+            padding: 0 20px;
+            margin-bottom: 40px;
+            &-img {
+                display: none;
+            }
+        
+            &-item {
+                width: 100%;
+                &__title {
+                    font-size: 32px;
+                    margin-bottom: 50px;
+                }
+                &-icons {
+                    .icon {
+                        &-item {
+                            width: 60px;
+                            height: 60px;
+                            svg {
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                        &__text {
+                            font-size: 18px;
+                            margin-top: 10px;
+                        }
+                        &:hover {
+                            .icon-item {
+                                animation: animIcon .6s ease-in-out ;
+                                border: 1px solid #f64e4e;
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+
+        
+    .footer {
+        padding: 40px 20px;
+    
+        &-item {
+            flex-wrap: wrap;
+            &-box {
+                width: 100%;
+            }
+        }
+        &__title {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        &-list {
+            font-size: 16px;
+        }
+        &-icon {
+            width: 100%;
+            margin-top: 30px;
+            justify-content: center;
+            svg {
+                width: 30px;
+    
+            }
+        }
     }
+
+    &-search {
+        padding: 70px 0 55px;
+        .search {
+            padding: 30px 20px 30px;
+        }
+    }
+    }
+
 }
 
 
 @media (max-width: 768px) {
+    .header .menu-burger {
+        display: flex;
+    }
     .main {
         .header {
             padding: 0 20px;
@@ -90,6 +193,10 @@
               
             }
             &-trailer {
+                margin-top: 0;
+                .tg_bot {
+                    display: none;
+                }
                 &-item {
                     font-size: 14px;
                     padding: 5px 10px;
@@ -123,8 +230,15 @@
             &-item {
                 display: flex;
                 flex-direction: column;
+                &-slider {
+                    margin: 0;
+                }
             }
-    
+            .youtube__link {
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+            }
             .trailer {
                 position: relative;
                 width: 100%;
@@ -143,26 +257,233 @@
                 &-item-btns {
                     margin-top: 0;
                 }
-                &__btn {
-                    width: 150px;
-                    height: 50px;
-                    font-size: 16px;
-                }
-                &__download {
-                    width: 150px;
-                    height: 50px;
-                    font-size: 16px;
+                &__download,
+                &__favorites {
+                    width: 100px;
+                    height: 40px;
+                    font-size: 14px;
                 }
             }
     
             &-item {
                padding: 0 20px;
+               max-width: 100% !important;
+               
+            .slick-next {
+                right: 40px;
+            }
+            .slick-prev {
+                left: 20px;
+            }
             }
         }
     }
+
+    .modal-donate {
+        .modal-body {
+            width: 100%;
+            height: 400px;
+            margin-top: 0;
+            padding: 20px 5px;
+            &__text {
+                font-size: 18px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    
+    } 
 }
 
 @media (max-width: 576px) {
+    body {
+        padding: 150px 0 80px;
+    }
+    .baner-advertising-sup {
+        font-size: 30px;
+        top: 40px;
+    }
+    .main {
+        .header {
+            &-trailer {
+                margin-top: -15px;
+                &-item {
+                    font-size: 12px;
+                    padding: 3px 7px;
+                }
+            }
+            label {
+                margin-right: 0;
+            }
+        }
+        border: 1px solid rgba(#fff, 0.6);
+        .wrapper {
+            .my-video {
+                #wrapper-video {
+                    height: 200px;
+                }
+            }
+            &-item {
+                display: flex;
+                flex-direction: column;
+                &-slider {
+                    margin: 0;
+                }
+                &-slider {
+                    padding: 0 !important;
+                }
+                .slick-center {
+                    height: 220px !important;
+                }
+                .slider-item {
+                    height: 200px;
+                }
+                
+            }
+            .youtube__link {
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+            }
+            .trailer {
+                position: relative;
+                width: 100%;
+                height: auto;
+                &__img {
+                    position: relative;
+                    object-fit: contain;
+                }
+                &-item {
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 50px;
+
+                    &__name {
+                        font-size: 22px;
+                        top: 70%;
+                    }
+                    .trailerName {
+                        top: 5%;
+                    }
+                }
+                &-item-btns {
+                    margin-top: 0;
+                }
+                &__download,
+                &__favorites {
+                    width: 100px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+            }
+    
+            &-item {
+               padding: 0 20px;
+               max-width: 100% !important;
+               
+            .slick-next {
+                right: 40px;
+            }
+            .slick-prev {
+                left: 20px;
+            }
+            }
+        }
+        .baner-advertising {
+            padding: 0 20px;
+            &-item {
+                height: 100px;
+                border-radius: 10px;
+                border: 1px solid rgba(#fff, 0.6);
+            }
+        }
+        .donate {
+            padding: 0 20px;
+            margin-bottom: 40px;
+        
+            &-item {
+                width: 100%;
+                &__title {
+                    font-size: 32px;
+                    margin-bottom: 30px;
+                }
+                &-icons {
+                    flex-direction: column;
+                    .line {
+                        width: 2px;
+                        height: 80%;
+                        left: 37.5px;
+                    }
+                    .icon {
+                        flex-direction: row;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: flex-start;
+                        text-align: left;
+                        margin-bottom: 20px;
+                        &-item {
+                            margin-right: 15px;
+                        }
+                        &__text {
+                            width: 70%;
+                            font-size: 20px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        
+        }
+
+        
+    .footer {
+        padding: 40px 20px;
+        border-radius: 20px;
+    
+        &-item {
+            flex-wrap: wrap;
+            &-box {
+                flex-wrap: wrap;
+                ul {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__title {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &-list {
+            font-size: 18px;
+        }
+        &-icon {
+            width: 100%;
+            margin-top: 30px;
+            justify-content: center;
+            svg {
+                width: 30px;
+    
+            }
+        }
+    }
+    &-search {
+        .search {
+            max-height: 750px;
+            &-item { 
+                width: 155px;
+                height: 220px;
+            }
+        }
+        .baner-advertising {
+            margin-top: 0px;
+        }
+    }
+    }
+
+
     .sign-in {
        width: 100%;
         &__title {
@@ -190,4 +511,10 @@
                 }
             }
         }
+}
+
+
+
+.trailerName {
+    top: 10% !important;
 }

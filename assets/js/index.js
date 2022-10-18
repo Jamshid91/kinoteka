@@ -8,7 +8,6 @@ const modal = document.querySelector('.modal-donate'),
       trailerName = document.querySelector('.trailer-item__name');
 
 
-
 donate.forEach(btn => {
     btn.addEventListener('click', () => {
         modal.classList.add('showModal');
@@ -21,14 +20,16 @@ modalDonateClose.addEventListener('click', () => {
 
 playBtns.forEach(play => {
   play.addEventListener('click', () => {
-    myVideo.style.display = 'block'
-    wrapperItem.style.marginTop = '0px'
+    myVideo.style.display = 'block';
+    wrapperItem.classList.add('wrapperItem');
+    trailerName.classList.add('trailerName');
   })
 });
 
 myVideoClose.addEventListener('click', () => {
-  myVideo.style.display = 'none'
-  wrapperItem.style.marginTop = '-150px'
+  myVideo.style.display = 'none';
+  wrapperItem.classList.remove('wrapperItem');
+  trailerName.classList.remove('trailerName');
 });
 
 
@@ -61,10 +62,21 @@ $(document).ready(function() {
     
     responsive: [
         {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+          }
+        },
+        {
           breakpoint: 576,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
+            arrows: false,
+            centerPadding: '50px',
+            centerMode: true,
           }
         },
     ]
