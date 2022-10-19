@@ -18,17 +18,23 @@
     font-family: Montserrat, sans-serif;
   }
   .body-page {
-    background-image: url(../../img/png/body.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top 0 center;
     max-width: 1920px;
     margin: 0 auto;
     overflow: hidden;
+    .middle {
+    background-image: url(../../img/png/middle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 0 center;
+    margin: 0 auto;
+    }
   }
   .sign-page {
     height: 100vh;
     overflow: hidden;
+    .middle {
+        height: 100vh;
+    }
   }
 .showScroll {
     overflow: hidden;
@@ -99,7 +105,7 @@
     -webkit-transition: .3s all;
     -o-transition: .3s all;
     transition: .3s all;
-    z-index: 49;
+    z-index: 9999;
     max-height: 100vh;
     overflow-y: scroll;
   }
@@ -122,7 +128,7 @@
         background: #061323;
         border-radius: 5px;
         transition: .3s all;
-        z-index: 999;
+        z-index: 9999;
     }
     .showCloseBtn {
         right: 20px;
@@ -261,7 +267,7 @@
     box-shadow: 0px 0px 15px 0px rgba(#11253c, 0.5);
     overflow: hidden;
     position: relative;
-    z-index: 9999;
+    z-index: 999;
     box-shadow: 0px 0px 20px 10px rgba(34, 60, 80, 0.2);
 
     .header {
@@ -584,6 +590,7 @@
            &-slider {
             max-width: 580px;
             padding: 0 40px;
+            overflow: hidden;
             .slick-slide {
                 margin: 0 5px;
             }
@@ -971,8 +978,9 @@
 .sign-in-box {
     width: 100%;
     height: 100vh;
-    max-width: 1390px;
+    max-width: 1400px;
     margin: 0 auto;
+
 }
 
 
