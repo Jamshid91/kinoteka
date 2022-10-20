@@ -298,6 +298,14 @@
         }
     
     } 
+    .sign-in-middle {
+        .middle-ad {
+            display: none;
+        }
+    }
+    .sign-in {
+        min-width: 90%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -488,10 +496,13 @@
         }
     }
     }
-
+    .sign-in-box {
+        .sub-ad {
+            display: none;
+        }
+    }
 
     .sign-in {
-       width: 100%;
         &__title {
             font-size: 18px;
             padding: 0;
